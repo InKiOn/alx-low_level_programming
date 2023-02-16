@@ -1,17 +1,17 @@
 /**
- * main - entry point function
+ * main - entry point
  *
  * Description: Prints without printf and puts
  *
- * Return: Always 0 on success
+ * Return: Always 0 (success)
  */
 
-#include <unistd.h>
-#include <sys/syscall.h>
+#include <stdio.h>
 
 int main(void)
 {
-	const char* message="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	syscall(SYS_write, STDERR_FILENO, message, sizeof(message) -1);
+	char mess = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	fwrite(mess, 1, strlen(mess), stderr);
 	return (0);
 }
