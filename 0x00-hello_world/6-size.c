@@ -1,8 +1,8 @@
 /**
  * main - Entry point
- * 
+ *
  * Description: prints size of types for system
- * 
+ *
  * Return: return 0 on success
  */
 
