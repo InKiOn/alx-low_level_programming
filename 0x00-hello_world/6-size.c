@@ -1,12 +1,14 @@
 /**
- * function main prints size of types for the particular system
- * does not take in any parameters
- * returns 0
+ * main - Entry point
+ * 
+ * Description: prints size of types for system
+ * 
+ * Return: return 0 on success
  */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
 	printf("Size of an int: %ld byte(s)\n", sizeof(int));

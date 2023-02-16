@@ -1,7 +1,9 @@
 /**
- * main function prints a statement usig printf
- * no parameters taken into argument
- * Return: returns 0
+ * main - entry point function
+ *
+ * Description: Prints a statement using printf
+ *
+ * Return: Always 0 on success
  */
 
 #include <stdio.h>
