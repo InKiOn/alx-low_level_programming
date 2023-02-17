@@ -16,9 +16,9 @@ int main(void)
 	int i;
 	char c;
 
-	for (i = 97; i < 122; i++)
+	for (i = 97; i < 123; i++)
 	{
-		if (i != 113 || i != 101)
+		if (i != 113 && i != 101)
 		{
 			c = i;
 			putchar(c);

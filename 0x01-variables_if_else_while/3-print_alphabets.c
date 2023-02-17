@@ -17,12 +17,12 @@ int main(void)
 	int i;
 	char c;
 
-	for (i = 97; i < 122; i++)
+	for (i = 97; i < 123; i++)
 	{
 		c = i;
 		putchar(c);
 	}
-	for (i = 65; i < 90; i++)
+	for (i = 65; i < 91; i++)
 	{
 		c = i;
 		putchar(c);

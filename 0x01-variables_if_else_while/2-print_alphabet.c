@@ -17,7 +17,7 @@ int main(void)
 	int i;
 	char c;
 
-	for (i = 97; i < 122; i++)
+	for (i = 97; i < 123; i++)
 	{
 		c = i;
 		putchar(c);
