@@ -14,7 +14,7 @@
 int main(void)
 {
 	int i, j, k;
-	
+
 	for (i = 0; i < 8; i++)
 	{
 		for (j = i + 1; j < 9; j++)
@@ -27,7 +27,7 @@ int main(void)
 					putchar('0' + (j % 10));
 					putchar('0' + (k % 10));
 
-					if(j == 8  && i == 7 && k ==9)
+					if (j == 8  && i == 7 && k == 9)
 					continue;
 
 					putchar(',');
@@ -36,8 +36,8 @@ int main(void)
 			}
 		}
 	}
-	
+
 	putchar('\n');
-	
+
 	return (0);
 }

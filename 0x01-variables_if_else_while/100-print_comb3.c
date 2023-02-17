@@ -14,7 +14,7 @@
 int main(void)
 {
 	int i, j;
-	
+
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
@@ -23,11 +23,11 @@ int main(void)
 			{
 				putchar('0' + (i % 10));
 				putchar('0' + (j % 10));
-				
-				if(j == 9  && i == 8)
+
+				if (j == 9  && i == 8)
 				{
 					continue;
-				}else
+				} else
 				{
 					putchar(',');
 					putchar(' ');
@@ -35,8 +35,8 @@ int main(void)
 			}
 		}
 	}
-	
+
 	putchar('\n');
-	
+
 	return (0);
 }
