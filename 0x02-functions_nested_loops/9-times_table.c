@@ -11,7 +11,7 @@ void times_table(void)
 {
 	int r, c, multiple;
 
-	for (r = 0; r <= 10; r++)
+	for (r = 0; r <= 9; r++)
 	{
 		_putchar('0');
 		for (c = 1; c <= 9; c++)
