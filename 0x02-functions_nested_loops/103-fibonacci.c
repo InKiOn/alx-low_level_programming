@@ -11,7 +11,7 @@ int main(void)
 {
 	float total;
 	unsigned long a = 0, b = 1, sum;
-	
+
 	while (1)
 	{
 		sum = a + b;
