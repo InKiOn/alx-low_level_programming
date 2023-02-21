@@ -10,47 +10,30 @@
 
 int main(void)
 {
-	int count;
-	unsigned long a = 0, b = 1, fib;
-	
-	for (count = 0; count < 98; count++)
-	{
-		if (count <= 1)
-		{
-			fib = count;
-		}
-		else if (count == 93)
-		{
-			unsigned long a1 = 0, b1 = 1, fib1;
-			unsigned long a2 = 0, b2 = 1, fib2;
-			int i;
-			
-			for (i = 2; i <= count; i++)
-			{
-				fib1 = a1 + b1;
-				a1 = b1;
-				b1 = fib1;
-				
-				fib2 = a2 + b2;
-				a2 = b2;
-				b2 = fib2;
+	unsigned long int a = 0, a1 = 1, b = 0, b2 = 2;
+	unsigned long int i, j, k;
+	int count, limit;
 
-				if (fib2 / 10000000000 > 0)
-				{
-					fib1 += fib2 / 10000000000;
-					fib2 %= 10000000000;
-				}
-			}
-			printf("%lu%010lu", fib1, fib2);
-			continue;
+	limit = 10000000000;
+
+	printf("%lu, %lu, ", a1, b2);
+	for (count = 2; count < 98; count++)
+	{
+		if (a1 + b2 > limit || b > 0 || a > 0)
+		{
+			i = (a1 + b2) / limit;
+			j = (a1 + b2) % limit;
+			k = a + b + i;
+			a = b, b = k;
+			a1 = b2, b2 = j;
+			printf("%lu%010lu", b, b2);
 		}
 		else
 		{
-			fib = a + b;
-			a = b;
-			b = fib;
+			j = a1 + b2;
+			a1 = b2, b2 = j;
+			printf("%lu", b2);
 		}
-		printf("%lu", fib);
 		if (count != 97)
 		{
 			printf(", ");
