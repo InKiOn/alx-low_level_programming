@@ -2,8 +2,9 @@
 
 /**
  * main - entry point
- * Description: Prints first 50 Fibonacci numbers, starting with 1 and 2, separated by a comma followed by a space.
- * 
+ *
+ * Description: Prints first 50 Fibonacci numbers starting with 1 and 2
+ *
  * Return: 0.
  */
 
@@ -11,7 +12,7 @@ int main(void)
 {
 	int count;
 	unsigned long a = 0, b = 1, sum;
-	
+
 	for (count = 0; count < 50; count++)
 	{
 		sum = a + b;

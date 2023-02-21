@@ -3,7 +3,7 @@
 /**
  * main - entry point
  * Description: Prints sum of even Fibonacci numbers
- * 
+ *
  * Return: 0.
  */
 
