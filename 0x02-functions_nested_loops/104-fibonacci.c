@@ -11,14 +11,19 @@
 int main(void)
 {
 	int count;
-	unsigned long a = 0, b = 1, sum;
+	unsigned long a = 0, b = 1, fib;
 
-	for (count = 1; count < 98; count++)
+	for (count = 0; count < 98; count++)
 	{
-		sum = a + b;
+		fib = a + b;
+		printf("%lu", fib);
 
 		a = b;
-		b = sum;
+		b = fib;
+		if (count != 98)
+		{
+			printf(", ");
+		}
 	}
 
 	printf("\n");
