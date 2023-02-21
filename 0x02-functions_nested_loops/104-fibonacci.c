@@ -41,7 +41,7 @@ int main(void)
 					fib2 %= 10000000000;
 				}
 			}
-			printf("%llu%010llu", fib1, fib2);
+			printf("%lu%010lu", fib1, fib2);
 			continue;
 		}
 		else
