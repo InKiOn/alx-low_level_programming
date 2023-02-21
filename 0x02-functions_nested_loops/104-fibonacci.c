@@ -11,8 +11,8 @@
 int main(void)
 {
 	unsigned long int a = 0, a1 = 1, b = 0, b2 = 2;
-	unsigned long int i, j, k;
-	int count, limit;
+	unsigned long int i, j, k, limit;
+	int count;
 
 	limit = 10000000000;
 
