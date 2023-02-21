@@ -13,7 +13,7 @@ int main(void)
 	int count;
 	unsigned long a = 0, b = 1, fib;
 
-	for (count = 0; count < 9999999999+)
+	for (count = 0; count < 99: count++)
 	{
 		fib = a + b;
 		printf("%lu", fib);
