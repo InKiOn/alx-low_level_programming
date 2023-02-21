@@ -10,11 +10,7 @@
 
 void print_times_table(int n)
 {
-	if (n > 15 || n < 0)
-	{
-		return (0);
-	}
-	else 
+	if (n <= 15 && n >= 0)
 	{
 		int r, c, multiple;
 		
