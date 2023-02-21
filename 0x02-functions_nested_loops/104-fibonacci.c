@@ -21,8 +21,8 @@ int main(void)
 		}
 		else if (count == 93)
 		{
-			unsigned long long a1 = 0, b1 = 1, fib1;
-			unsigned long long a2 = 0, b2 = 1, fib2;
+			unsigned long a1 = 0, b1 = 1, fib1;
+			unsigned long a2 = 0, b2 = 1, fib2;
 			int i;
 			
 			for (i = 2; i <= count; i++)
