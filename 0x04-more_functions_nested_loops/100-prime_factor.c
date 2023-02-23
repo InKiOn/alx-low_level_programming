@@ -22,14 +22,13 @@ int main(void)
 	}
 	for (i = 3; i < sqrt(num); i = i + 2)
 	{
-		while (num % i == 0)
+		if (num % i == 0)
 		{
-			printf("%ld", i);
 			num = num / i;
 		}
 	}
 
-	printf("%ld", num);
+	printf("%ld\n", num);
 
 	return (0);
 }
