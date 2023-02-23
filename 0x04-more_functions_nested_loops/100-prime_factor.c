@@ -24,12 +24,12 @@ int main(void)
 	{
 		while (num % i == 0)
 		{
-			printf("%d", i);
+			printf("%ld", i);
 			num = num / i;
 		}
 	}
 
-	printf("%d", num);
+	printf("%ld", num);
 
 	return (0);
 }
