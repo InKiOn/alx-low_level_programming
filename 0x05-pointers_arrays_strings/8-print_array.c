@@ -1,14 +1,15 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * puts_half - void function
+ * print_array - void function
  * @n: int number of elements to print
  * @a: the arrays int type
  *
  * Description: print elements of an array of integers
  */
 
-void puts_half(int *a, int n)
+void print_array(int *a, int n)
 {
 
 	int i;
