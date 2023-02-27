@@ -15,7 +15,7 @@ void rev_string(char *s)
 	t = s;
 	if (*s == '\0')
 	{
-		_putchar('\n');
+		s[1] = "";
 	}
 	else
 	{
