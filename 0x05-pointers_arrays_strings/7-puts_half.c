@@ -11,7 +11,7 @@
 void puts_half(char *str)
 {
 	int i, j, n;
-	
+
 	if (*str == '\0')
 	{
 		_putchar('\n');
@@ -22,9 +22,9 @@ void puts_half(char *str)
 		{
 			j++;
 		}
-		if (i % 2 == 0)
+		if (j % 2 == 0)
 		{
-			for (j = i - 1; j >= (i/2); j--)
+			for (j = i - 1; j >= (i / 2); j--)
 			{
 				_putchar(str[j]);
 			}
@@ -32,7 +32,7 @@ void puts_half(char *str)
 		else
 		{
 			n = (i - 1) / 2;
-			for (j = i - 1; j >= n; j--)
+			for (j = i - 1; j > n; j--)
 			{
 				_putchar(str[j]);
 			}
