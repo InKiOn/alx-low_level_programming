@@ -23,7 +23,7 @@ void rev_string(char *s)
 		{
 			n = i;
 		}
-		for (c = 0; c <= ((n+1)/2); c++)
+		for (c = 0; c <= ((n + 1) / 2); c++)
 		{
 			k = s[n];
 			s[n] = t[c];
@@ -31,6 +31,5 @@ void rev_string(char *s)
 			n--;
 			c++;
 		}
-		_putchar('\n');
 	}
 }
