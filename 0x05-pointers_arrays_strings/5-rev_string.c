@@ -15,7 +15,7 @@ void rev_string(char *s)
 	t = s;
 	if (*s == '\0')
 	{
-		_putchar(32);
+		_putchar('\n');
 	}
 	else
 	{
@@ -29,7 +29,6 @@ void rev_string(char *s)
 			s[n] = t[c];
 			t[c] = k;
 			n--;
-			c++;
 		}
 	}
 }
