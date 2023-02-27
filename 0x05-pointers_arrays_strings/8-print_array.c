@@ -16,11 +16,11 @@ void print_array(int *a, int n)
 
 	if (n < 0)
 	{
-		printf("\n");
+		printf("");
 	}
 	else if (n == 0)
 	{
-		printf("\n");
+		printf("");
 	}
 	else
 	{
