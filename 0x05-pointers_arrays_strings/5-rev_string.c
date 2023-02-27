@@ -15,7 +15,7 @@ void rev_string(char *s)
 	t = s;
 	if (s[0] == '\0')
 	{
-		s[1] = '\n';
+		s[1] = '\0';
 	}
 	else
 	{
