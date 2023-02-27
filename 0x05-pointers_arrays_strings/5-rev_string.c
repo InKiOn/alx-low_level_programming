@@ -13,9 +13,9 @@ void rev_string(char *s)
 	char *t, k;
 
 	t = s;
-	if (*s == '\0')
+	if (s[0] == '\0')
 	{
-		s[1] = '';
+		s[1] = '\n';
 	}
 	else
 	{
