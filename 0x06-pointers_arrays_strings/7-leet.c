@@ -24,7 +24,7 @@ char *leet(char *str)
 				str[i] = j + '0';
 		}
 
-		indx1++;
+		i++;
 	}
 
 	return (str);
