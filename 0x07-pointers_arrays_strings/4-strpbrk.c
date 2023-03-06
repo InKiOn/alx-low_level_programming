@@ -10,21 +10,20 @@
  * Return: pointer to the byte that matces one in accept or NULL
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int index;
-	unsigned int bytes;
 
 	while (*s)
 	{
 		for (index = 0; accept[index]; index++)
 		{
-			if(*s == accept[index])
+			if (*s == accept[index])
 			{
 				return (s);
 			}
 		}
 		s++;
 	}
-	return (bytes);
+	return ('\0');
 }
