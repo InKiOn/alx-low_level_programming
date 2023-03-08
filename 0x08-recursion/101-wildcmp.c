@@ -3,14 +3,12 @@
 int strlen_no_wilds(char *str);
 void iterate_wild(char **wildstr);
 char *postfix_match(char *str, char *postfix);
-int wildcmp(char *s1, char *s2);
 
 /**
- * strlen_no_wilds - Returns the length of a string,
- *                   ignoring wildcard characters.
- * @str: The string to be measured.
+ * strlen_no_wilds - Returns length of a string NO wildcard characters
+ * @str: string to be measured
  *
- * Return: The length.
+ * Return: length
  */
 int strlen_no_wilds(char *str)
 {
@@ -19,7 +17,9 @@ int strlen_no_wilds(char *str)
 	if (*(str + index))
 	{
 		if (*str != '*')
+		{
 			len++;
+		}
 
 		index++;
 		len += strlen_no_wilds(str + index);
@@ -58,7 +58,9 @@ char *postfix_match(char *str, char *postfix)
 AOA	int postfix_len = strlen_no_wilds(postfix) - 1;
 
 	if (*postfix == '*')
+	{
 		iterate_wild(&postfix);
+	}
 
 	if (*(str + str_len - postfix_len) == *postfix && *postfix != '\0')
 	{

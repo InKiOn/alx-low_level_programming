@@ -2,7 +2,6 @@
 
 int _len(char *s);
 int _pal(char *s, int len, int in);
-int is_palindrome(char *s);
 
 /**
  * _len - Returns length of a string
