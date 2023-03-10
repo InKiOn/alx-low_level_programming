@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 {
 	int count, result;
 	int i;
+
 	result = 0;
 
 	for (count = 1; count < argc; count++)
