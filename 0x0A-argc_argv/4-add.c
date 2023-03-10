@@ -14,13 +14,9 @@ int main(int argc, char *argv[])
 	int count, result;
 	int i;
 
-	if (argc <= 0)
-	{
-		printf("0\n");
-	}
 	for (count = 1; count <= argc; count++)
 	{
-		for (i = 0; i <= argc; i++)
+		for (i = 0; argv[num][i]; i++)
 		{
 			if (argv[num][i] < '0' || argv[num][i] > '9')
 			{
